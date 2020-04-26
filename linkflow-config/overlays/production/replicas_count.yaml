@@ -10,6 +10,7 @@ spec:
       maxUnavailable: 1
     type: RollingUpdate
   template:
-    containers:
+    spec:
+      containers:
       - name: nginx
         image: nginx:1.17.1
